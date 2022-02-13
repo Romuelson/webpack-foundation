@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
     mode: 'production',
@@ -8,6 +9,10 @@ module.exports = {
             minify: {
 				collapseWhitespace: true
 			}
+        }),
+        new MiniCssExtractPlugin({
+			filename: `./styles/[name].[contenthash].min.css`,
+			chunkFilename: `styles/[id].[contenthash].min.css`
         })
     ],
     output: {
