@@ -1,3 +1,2 @@
 const calc = (x, y) => (x + y);
-
-calc(1, 2);
+console.log(calc(1, 2));
