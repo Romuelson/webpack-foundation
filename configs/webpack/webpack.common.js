@@ -17,7 +17,7 @@ module.exports = {
 		new webpack.DefinePlugin(envKeys)
 	],
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, '../../dist'),
         clean: true,
         pathinfo: false
     },
