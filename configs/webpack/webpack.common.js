@@ -42,10 +42,7 @@ module.exports = {
         rules: [
             {
                 test: /\.(css|s[ac]ss)$/i,
-                use: [MiniCssExtractPlugin.loader, {
-                    loader: 'css-loader',
-                    options: { sourceMap: false }
-                }, {
+                use: [MiniCssExtractPlugin.loader, 'css-loader', {
                     loader: 'postcss-loader',
                     options: {
                         postcssOptions: {
