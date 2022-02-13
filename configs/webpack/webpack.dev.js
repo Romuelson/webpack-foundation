@@ -20,6 +20,10 @@ module.exports = {
         new MiniCssExtractPlugin({
 			filename: `./styles/[name].css`,
 			chunkFilename: `styles/[id].css`
+        }),
+        new webpack.SourceMapDevToolPlugin({
+            filename: `./[file].map`,
+            exclude: [/runtime.*.*/ ,/vendors.*.*/]
         })
     ],
     output: {
