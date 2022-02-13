@@ -4,8 +4,14 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
+const APP_PORT = process.env.APP_PORT || 1488
+
 module.exports = {
     mode: 'development',
+    devServer: {
+        port: APP_PORT,
+        historyApiFallback: true
+    },
     plugins: [
         new HtmlWebpackPlugin({
             filename: `[name].html`,
