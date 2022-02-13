@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const dotenv = require('dotenv');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const env = dotenv.config().parsed;
 const envKeys = Object.keys(env).reduce((prev, next) => {
@@ -41,7 +42,7 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/i,
-                use: ['css-loader']
+                use: [MiniCssExtractPlugin.loader, 'css-loader']
             }
         ]
     }
