@@ -2,9 +2,11 @@
   "name": "webpack-foundation",
   "version": "1.0.0",
   "description": "Foundation for a web application based on Webpack",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack serve --open --mode development",
+    "start:dev": "webpack --mode development",
+    "start:prod": "webpack --mode production"
   },
   "repository": {
     "type": "git",
