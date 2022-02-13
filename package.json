@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/Romuelson/webpack-foundation/issues"
   },
-  "homepage": "https://github.com/Romuelson/webpack-foundation#readme"
+  "homepage": "https://github.com/Romuelson/webpack-foundation#readme",
+  "devDependencies": {
+    "webpack": "^5.68.0"
+  }
 }
