@@ -14,20 +14,20 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            filename: `[name].html`,
+            filename: '[name].html',
             template: './public/index.html'
         }),
         new MiniCssExtractPlugin({
-			filename: `./styles/[name].css`,
-			chunkFilename: `styles/[id].css`
+			filename: './styles/[name].css',
+			chunkFilename: 'styles/[id].css'
         }),
         new webpack.SourceMapDevToolPlugin({
-            filename: `./[file].map`,
+            filename: './[file].map',
             exclude: [/runtime.*.*/ ,/vendors.*.*/]
         })
     ],
     output: {
-		filename: `./scripts/[name].js`
+		filename: './scripts/[name].js'
     },
     module: {
         rules: [

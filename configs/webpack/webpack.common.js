@@ -22,7 +22,7 @@ module.exports = {
         pathinfo: false
     },
     resolve: {
-		extensions: ["", ".js", ".json"]
+		extensions: ['', '.js', '.json']
 	},
     devtool: false,
     optimization: {
@@ -48,10 +48,7 @@ module.exports = {
                         postcssOptions: {
                             plugins: [
                                 [
-                                    'postcss-preset-env',
-                                    {
-                                        // Options
-                                    }
+                                    'postcss-preset-env', {}
                                 ]
                             ]
                         }
